@@ -1,0 +1,140 @@
+:root{
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background-image: url('background.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    padding:0;
+    margin:0;
+    min-width: 481px;
+    /* font-family: 'Poppins', sans-serif; */
+    
+}
+
+
+.section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top:70px;
+}
+
+.parent{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 960px;
+    width: 959px;
+    height: 540px;
+    border-radius: 24px;
+    background: linear-gradient(to bottom, rgba(31,25,158,1) 0%, rgba(74,25,130,1) 35%, rgba(151,28,168,1) 100%);
+    
+}
+
+.robot{
+    width:50%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 16px 0 0 16px;
+}
+
+.child{
+    display: flex;
+    flex-direction: row;
+    width: 940px;
+    height: 524px;
+    background-color: #1c1b43;
+    border-radius: 16px;
+}
+
+.text_area{
+    width: 430px;
+    height: 120px;
+    border: 2px solid #26456D;
+    border-radius: 8px;
+    background-color: #1D2A52;
+    color: rgb(199, 195, 195);
+    outline: none;
+}
+
+.settings{
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: top;
+    margin-top: 16px;
+    margin-left: 16px;
+}
+
+.text__speed{
+    display: flex;
+    flex-direction: column;
+    color: rgb(199, 195, 195);
+    gap: 10px;
+    height: 30px;
+    justify-content: center;
+    align-items: left;
+    width: 140px;
+    border-radius: 8px;
+    margin-top: 24px;
+}
+
+.button{
+    width:100%;
+    border:none;
+    border-radius: 8px;
+    margin-top:96px;
+    height: 36px;
+    font:bold;
+    background: rgb(119,0,255);
+    background: linear-gradient(90deg, rgba(119,0,255,1) 0%, rgba(224,0,255,1) 100%);
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.voice__selector{
+    margin-top:16px;
+}
+
+.language__selector{
+    display: flex;
+    flex-direction: column;
+    gap:2px;
+}
+
+
+
+.dropdown{
+    color:white;
+    height: 30px;
+    width: 100%;
+    background-color: #1D2A52;
+    border: none;
+    outline: none;
+    border-radius: 8px;
+    
+}
+
+
+@media (max-width:984px) {
+    img{
+        display: none;
+    }
+
+    .parent{
+        max-width: 480px;
+    }
+
+    .child{
+        max-width: 460px;
+    }
+
+    .settings{
+        margin-left: 12px;
+    }
+}
+

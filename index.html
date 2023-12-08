@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <script src="index.js" defer></script>
+</head>
+<body>
+    <section class="section">
+        <div class="parent">
+            <div class="child">
+                <img src="robot.jpg" alt="robot" class="robot">
+                <div class="settings">
+                    <textarea cols="30" rows="10" class="text_area" placeholder="Enter your text" id="input" autofocus></textarea>
+                       <div class="voice__selector">                        
+                        <div class="language__selector">
+                            <div style="    color: rgb(199, 195, 195);">Voice</div>
+                            <select id="dropdown" class="dropdown">
+                            </select>
+                        </div>
+                        <div class="text__speed">
+                            <div>Speed</div>
+                            <input type="range" min="0.5" value="1" max="1.5" step="0.25" id="rate">
+                        </div>
+                    </div>
+                    <button class="button" id="button">Text to Speech</button>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
